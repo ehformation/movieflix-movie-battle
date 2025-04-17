@@ -12,7 +12,7 @@ if(empty($films) || count($films) < 2){
     <div class="container-xl">
         <div class="row trend_1">
             <div class="col-md-12">
-                <h4 class="mb-0"><i class="fa fa-youtube-play align-middle col_red me-1"></i> Lequel de ces deux films preferes-tu?</h4>
+                <h4 class="mb-0"><i class="fa fa-youtube-play align-middle col_red me-1"></i>Battle du jour: Lequel de ces deux films preferes-tu?</h4>
             </div>
         </div>
 

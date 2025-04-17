@@ -13,7 +13,7 @@ class BattleController {
     }
 
     public function display_battle(){
-        $films = $this->model->get_random_films();
+        $films = $this->model->get_daily_random_films();
 
         include MOVIEFLIX_PLUGIN_PATH . 'app/Views/battleView.php';
     }
