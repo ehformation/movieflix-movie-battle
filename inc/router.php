@@ -6,7 +6,7 @@ require_once MOVIEFLIX_PLUGIN_PATH . 'app/Controllers/BattleController.php';
 
 class MovieFlixRouter {
     public function handle_request() {
-        $action = isset($_GET['movieflix_action']) ? sanitize_text_field($_GET['movieflix_action']) : null;
+        $action = isset($_GET['movieflix-action']) ? sanitize_text_field($_GET['movieflix-action']) : null;
 
         $controller = new BattleController();
 
@@ -15,8 +15,8 @@ class MovieFlixRouter {
                 $controller->vote();
                 break;
             default:
-                $controller->display_battle();
-                break;
+               
+            break;
         }
     }
 }

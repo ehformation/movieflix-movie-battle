@@ -14,5 +14,12 @@ class BattleModel {
 
         return get_posts($args);
     }
+
+    public function add_vote($film_id){
+        $nbr_votes = get_post_meta($film_id, 'movieflix_votes');
+        $nbr_votes = $nbr_votes ? intval($nbr_votes) + 1 : 1;
+        update_post_meta( $film_id, 'movieflix_votes', $nbr_votes);
+    }
+
 }
     

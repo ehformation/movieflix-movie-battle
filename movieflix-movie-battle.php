@@ -19,3 +19,11 @@ function movieflix_init() {
 }
 add_action( 'init', 'movieflix_init');
 
+
+function movieflix_battle_movie_shortcode(){
+    ob_start();
+    $controller = new BattleController();
+    $controller->display_battle();
+    return ob_get_clean();
+}
+add_shortcode( 'battle_movie', 'movieflix_battle_movie_shortcode' );
